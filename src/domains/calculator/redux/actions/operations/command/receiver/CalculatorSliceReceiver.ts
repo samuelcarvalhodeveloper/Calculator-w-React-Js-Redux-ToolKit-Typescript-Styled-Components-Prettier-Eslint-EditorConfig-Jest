@@ -7,16 +7,13 @@ import {
   BACKSPACE_LAST_CHARACTER_INDEX,
 } from "../../../../../../../constants/calculator/operations/backspaceConstants";
 import { StateValue } from "../../../../../../../types/calculator/redux/StateValue";
+import isViewfinderInputValueEqualToANoTValidMathematicalExpression from "../../../../../specifications/isViewfinderInputValueEqualToANoTValidMathematicalExpression";
 
 class CalculatorSliceReceiver {
   public addCharactersToViewfinder(state: StateValue, action: string): void {
-    this.isViewfinderInputValueEqualToError(state.value)
+    isViewfinderInputValueEqualToANoTValidMathematicalExpression(state.value)
       ? this.turnViewfinderValueEmpty(state)
       : this.addActionPayloadToViewfinderValue(state, action);
-  }
-
-  private isViewfinderInputValueEqualToError(state: string): boolean {
-    return state === ERROR_STATE_TEXT;
   }
 
   private addActionPayloadToViewfinderValue(
@@ -54,7 +51,7 @@ class CalculatorSliceReceiver {
   }
 
   public backspaceViewfinderValue(state: StateValue): void {
-    this.isViewfinderInputValueEqualToError(state.value)
+    isViewfinderInputValueEqualToANoTValidMathematicalExpression(state.value)
       ? this.turnViewfinderValueEmpty(state)
       : this.removeLastCharacterFromViewfinder(state);
   }
