@@ -1,5 +1,5 @@
 import { describe, test, expect } from "@jest/globals";
-import OperatorFactory from "../../../../../domains/calculator/keypad_characters_creation/operators_characters_creation/OperatorFactory";
+import OperatorFactory from "../../../../../modules/calculator/keypad_characters_creation/operators_characters_creation/OperatorFactory";
 import { MULTIPLICATION_OPERATOR } from "../../../../../constants/calculator/keypad_characters/operatorsConstants";
 
 describe("Test Class OperatorFactory Behavior", () => {

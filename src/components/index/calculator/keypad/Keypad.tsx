@@ -1,14 +1,14 @@
 import { useDispatch } from "react-redux";
 import { AnyAction, Dispatch } from "@reduxjs/toolkit";
 import KeypadStyled from "./Styled";
-import OperatorFactory from "../../../../domains/calculator/keypad_characters_creation/operators_characters_creation/OperatorFactory";
+import OperatorFactory from "../../../../modules/calculator/keypad_characters_creation/operators_characters_creation/OperatorFactory";
 import {
   ADDICTION_OPERATOR,
   DIVISION_OPERATOR,
   MULTIPLICATION_OPERATOR,
   SUBTRACTION_OPERATOR,
 } from "../../../../constants/calculator/keypad_characters/operatorsConstants";
-import NumberFactory from "../../../../domains/calculator/keypad_characters_creation/numbers_characters_creation/NumberFactory";
+import NumberFactory from "../../../../modules/calculator/keypad_characters_creation/numbers_characters_creation/NumberFactory";
 import {
   NUMBER_EIGHT,
   NUMBER_FIVE,
@@ -21,14 +21,14 @@ import {
   NUMBER_TWO,
   NUMBER_ZERO,
 } from "../../../../constants/calculator/keypad_characters/numbersConstants";
-import SymbolsFactory from "../../../../domains/calculator/keypad_characters_creation/symbols_characters_creation/SymbolsFactory";
+import SymbolsFactory from "../../../../modules/calculator/keypad_characters_creation/symbols_characters_creation/SymbolsFactory";
 import { DOT_NOTATION } from "../../../../constants/calculator/keypad_characters/symbolsConstants";
 import {
   addCharactersToViewfinder,
   backspaceViewfinderValue,
   cleanViewfinderValue,
   getCalculateResult,
-} from "../../../../domains/calculator/redux/slices/CalculatorSlice";
+} from "../../../../modules/calculator/redux/slices/CalculatorSlice";
 
 function Keypad(): JSX.Element {
   const dispatch: Dispatch<AnyAction> = useDispatch();

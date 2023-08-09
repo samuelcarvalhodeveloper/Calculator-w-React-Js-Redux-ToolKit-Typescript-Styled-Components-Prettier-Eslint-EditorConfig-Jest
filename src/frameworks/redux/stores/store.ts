@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import CalculatorSlice from "../../../domains/calculator/redux/slices/CalculatorSlice";
+import CalculatorSlice from "../../../modules/calculator/redux/slices/CalculatorSlice";
 
 class Store {
   public storeConfiguration = configureStore({

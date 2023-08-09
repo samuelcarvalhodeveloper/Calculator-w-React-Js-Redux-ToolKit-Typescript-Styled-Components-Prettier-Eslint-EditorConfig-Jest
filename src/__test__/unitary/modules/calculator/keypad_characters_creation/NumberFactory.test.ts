@@ -1,5 +1,5 @@
 import { describe, test, expect } from "@jest/globals";
-import NumberFactory from "../../../../../domains/calculator/keypad_characters_creation/numbers_characters_creation/NumberFactory";
+import NumberFactory from "../../../../../modules/calculator/keypad_characters_creation/numbers_characters_creation/NumberFactory";
 import { NUMBER_ONE } from "../../../../../constants/calculator/keypad_characters/numbersConstants";
 
 describe("Test Class NumberFactory Behavior", () => {

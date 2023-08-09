@@ -1,5 +1,5 @@
 import { describe, test, expect } from "@jest/globals";
-import isViewfinderInputValueEqualToANoTValidMathematicalExpression from "../../../../../domains/calculator/specifications/isViewfinderInputValueEqualToANoTValidMathematicalExpression";
+import isViewfinderInputValueEqualToANoTValidMathematicalExpression from "../../../../../modules/calculator/specifications/isViewfinderInputValueEqualToANoTValidMathematicalExpression";
 import {
   ERROR_STATE_TEXT,
   INFINITY_STATE_TEXT,

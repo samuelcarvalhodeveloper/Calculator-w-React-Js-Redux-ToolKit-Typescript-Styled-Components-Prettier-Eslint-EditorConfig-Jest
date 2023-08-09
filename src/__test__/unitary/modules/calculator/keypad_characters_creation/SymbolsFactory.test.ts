@@ -1,5 +1,5 @@
 import { describe, test, expect } from "@jest/globals";
-import SymbolsFactory from "../../../../../domains/calculator/keypad_characters_creation/symbols_characters_creation/SymbolsFactory";
+import SymbolsFactory from "../../../../../modules/calculator/keypad_characters_creation/symbols_characters_creation/SymbolsFactory";
 import { DOT_NOTATION } from "../../../../../constants/calculator/keypad_characters/symbolsConstants";
 
 describe("Test Class SymbolsFactory Behavior", () => {
