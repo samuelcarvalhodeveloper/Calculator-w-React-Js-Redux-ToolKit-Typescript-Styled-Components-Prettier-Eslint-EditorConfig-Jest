@@ -39,6 +39,10 @@ Calculator With React Js Redux ToolKit Typescript Styled Components Prettier Esl
 
 `npm run build`
 
+**To Run The Tests:**
+
+`npm run test`
+
 <br />
 
 <h3 id="technologies">🚀  Technologies:</h3>
