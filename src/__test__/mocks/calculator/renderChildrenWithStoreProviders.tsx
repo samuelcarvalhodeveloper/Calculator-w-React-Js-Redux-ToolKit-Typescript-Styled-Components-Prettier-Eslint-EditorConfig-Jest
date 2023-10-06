@@ -1,7 +1,9 @@
 import { RenderOptions, render } from "@testing-library/react";
 import { PropsWithChildren } from "react";
 import { Provider } from "react-redux";
-import store, { Store } from "../../../frameworks/redux/stores/store";
+import store, {
+  Store,
+} from "../../../domains/ui/redux/stores/implementation/store";
 
 interface ExtendedRenderOptions extends Omit<RenderOptions, "queries"> {
   storeSetup?: Store;

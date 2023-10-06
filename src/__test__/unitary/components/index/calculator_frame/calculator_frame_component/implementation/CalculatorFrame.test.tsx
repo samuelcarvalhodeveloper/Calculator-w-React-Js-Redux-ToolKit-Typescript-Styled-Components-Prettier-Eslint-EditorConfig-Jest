@@ -1,38 +1,36 @@
 import { describe, test, expect } from "@jest/globals";
 import { fireEvent, screen } from "@testing-library/react";
-import renderCalculatorIndexScreenAndCleanItsViewfinderValue from "../mocks/calculator/renderCalculatorIndexScreenAndCleanItsViewfinderValue";
-import { HEADER_SITE_LOGO_ALT_TEXT } from "../constants/pages/index/pageElementsAltTextConstants";
+import renderCalculatorFrameScreenAndCleanItsViewfinderValue from "../../../../../../mocks/calculator/renderCalculatorFrameAndCleanItsViewfinderValue";
 import {
   CALCULATOR_FRAME_SUBTITLE_TEXT,
   CALCULATOR_FRAME_TITLE_TEXT,
   CALCULATOR_KEYPAD_BACKSPACE_BUTTON_TEXT,
   CALCULATOR_KEYPAD_CLEAN_BUTTON_TEXT,
   EQUAL_OPERATION_BUTTON_TEXT,
-} from "../constants/pages/index/pageElementsInnerTextConstants";
+} from "../../../../../../constants/pages/index/pageElementsInnerTextConstants";
 import {
   NUMBER_FOUR,
   NUMBER_ONE,
   NUMBER_TWO,
-} from "../../constants/calculator/keyboard_characters/numbersConstants";
+} from "../../../../../../../constants/calculator/keyboard_characters/numbersConstants";
 import {
   ADDICTION_OPERATOR,
   DIVISION_OPERATOR,
   MULTIPLICATION_OPERATOR,
   SUBTRACTION_OPERATOR,
-} from "../../constants/calculator/keyboard_characters/operatorsConstants";
-import { INITIAL_STATE_VALUE } from "../../constants/calculator/viewfinder/calculatorViewfinderValuesConstants";
+} from "../../../../../../../constants/calculator/keyboard_characters/operatorsConstants";
+import { INITIAL_STATE_VALUE } from "../../../../../../../constants/calculator/viewfinder/calculatorViewfinderValuesConstants";
 
-describe("Test Index Domain Behavior", () => {
+describe('Test "CalculatorFrame" Component Behavior', () => {
   beforeEach(() => {
-    renderCalculatorIndexScreenAndCleanItsViewfinderValue();
+    renderCalculatorFrameScreenAndCleanItsViewfinderValue();
   });
-  test("Test If Elements Were Placed Correctly", () => {
-    const { getByText, getByAltText } = screen;
 
-    expect(getByAltText(HEADER_SITE_LOGO_ALT_TEXT)).toBeTruthy();
+  test("Test If Elements Were Placed Correctly", () => {
+    const { getByText } = screen;
+
     expect(getByText(CALCULATOR_FRAME_TITLE_TEXT)).toBeTruthy();
     expect(getByText(CALCULATOR_FRAME_SUBTITLE_TEXT)).toBeTruthy();
-    expect(getByText(CALCULATOR_KEYPAD_CLEAN_BUTTON_TEXT)).toBeTruthy();
   });
 
   test("Test If Simple Addiction Operation Was Done Correctly", () => {

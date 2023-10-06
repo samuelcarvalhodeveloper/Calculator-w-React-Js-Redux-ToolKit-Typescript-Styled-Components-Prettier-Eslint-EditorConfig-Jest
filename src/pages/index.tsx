@@ -1,12 +1,11 @@
-import Header from "../components/index/header/Header";
-import Calculator from "../components/index/calculator/calculator_frame/CalculatorFrame";
+import CalculatorFrame from "../components/index/calculator_frame/calculator_frame_component/implementation/CalculatorFrame";
+import Header from "../components/index/header/implementation/Header";
 
 function Index() {
   return (
     <>
       <Header />
-      <Calculator />
-      <div className="space"></div>
+      <CalculatorFrame />
     </>
   );
 }

@@ -13,13 +13,13 @@ import {
   NUMBER_FOUR,
   NUMBER_ONE,
   NUMBER_TWO,
-} from "../../../constants/calculator/keypad_characters/numbersConstants";
+} from "../../../constants/calculator/keyboard_characters/numbersConstants";
 import {
   ADDICTION_OPERATOR,
   DIVISION_OPERATOR,
   MULTIPLICATION_OPERATOR,
   SUBTRACTION_OPERATOR,
-} from "../../../constants/calculator/keypad_characters/operatorsConstants";
+} from "../../../constants/calculator/keyboard_characters/operatorsConstants";
 import { INITIAL_STATE_VALUE } from "../../../constants/calculator/viewfinder/calculatorViewfinderValuesConstants";
 
 describe('Test Page "Index" Component Behavior', () => {
